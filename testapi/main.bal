@@ -12,6 +12,6 @@ service /testapi on new http:Listener(9090) {
     resource function get test() returns json|error {
         log:printInfo("Executing test API resource...");
 
-        return {"message": "success"};
+        return {"message": "success 1"};
     }
 }
